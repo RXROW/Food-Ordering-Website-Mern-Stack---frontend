@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/Logo.png";
 import { BiPhoneCall } from "react-icons/bi";
 const NavBar = () => {
-  return (
-    <header className="max-w-screen-2xl">
-      <div className=" flex items-center justify-around xl:px-24 p-1 bg-neutral text-neutral-content">
-        <span className="flex items-center">
-          {" "}
-          <BiPhoneCall /> (414) 857 - 0107
-        </span>
-        <span>yummy@bistrobliss</span>
+ let [sticky , setSticky] = useState(false);
+ useEffect(()=>{
+  const handleScrol=()=>{
+    const offset= window.scrollY;
+    if(offset >0){
+      setSticky(true);
+    }else{
+    setSticky(false);
+    }
+  }
+  window.addEventListener("scroll",handleScrol);
+  return()=>{
+    window.addEventListener("scroll",handleScrol);
 
-        <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          icons
-        </div>
-      </div>
-      <div className="navbar xl:px-24">
+  }
+ },[])
+
+  return (
+    <header className="max-w-screen-2xl  fixed top-0  left-0 right-0  transition-all duration-300 ease-out   ">
+     
+      <div className={ `navbar xl:px-24  ${sticky ? "shadow-md bg-base-100  transition-all duration-300 ease-out " : ""}`}  >
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -161,7 +168,7 @@ const NavBar = () => {
               <span className="badge badge-sm indicator-item">8</span>
             </div>
           </div>
-          <a className="btn bg-green rounded-full px-3 text-white flex items-center  gap-1 hover:bg-slate-500">
+          <a className="btn bg-rose-600   rounded-full px-3 text-white flex items-center  gap-1 hover:bg-orange-900">
             <BiPhoneCall /> Contact{" "}
           </a>
         </div>

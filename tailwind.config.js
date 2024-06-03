@@ -11,7 +11,10 @@ export default {
         "red":"#FF6868",
         "secondary":"#555",
         "primaryBG":"#FCFCFC",
-      }
+      },
+      screens: {
+        'xs': '380px',  // Custom breakpoint for extra small devices
+      },
     },
 
   },
