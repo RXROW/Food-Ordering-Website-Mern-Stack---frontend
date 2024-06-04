@@ -1,10 +1,13 @@
 import React from 'react';
-
+import img1 from "../../assets/categoryImage/img1.png"
+import img2 from "../../assets/categoryImage/img2.png"
+import img3 from "../../assets/categoryImage/img3.png"
+import img4 from "../../assets/categoryImage/img4.png"
 const categoryItems = [
-  { id: 1, title: "Main Dish", desc: "(86 dishes)", image: "src/assets/categoryImage/img1.png" },
-  { id: 2, title: "Breakfast", desc: "(12 dishes)", image: "src/assets/categoryImage/img2.png" }, // Corrected typo
-  { id: 3, title: "Dessert", desc: "(42 dishes)", image: "src/assets/categoryImage/img3.png" },
-  { id: 4, title: "Browse All", desc: "(221 items)", image: "src/assets/categoryImage/img4.png" },
+  { id: 1, title: "Main Dish", desc: "(86 dishes)", image: img1 },
+  { id: 2, title: "Breakfast", desc: "(12 dishes)", image: img2 }, // Corrected typo
+  { id: 3, title: "Dessert", desc: "(42 dishes)", image: img3 },
+  { id: 4, title: "Browse All", desc: "(221 items)", image: img4 },
 ];
 
 const Categories = () => {
