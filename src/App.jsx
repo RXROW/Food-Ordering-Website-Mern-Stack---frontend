@@ -1,15 +1,15 @@
 import { useState } from 'react'
  
 import './App.css'
+import NavBar from '../components/NavBar';
 
 function App() {
  
 
   return (
     <>
-    <h1 className="bg-green">
-      Hello world!
-    </h1>
+     <NavBar/>
+   
     </>
   )
 }
