@@ -1,5 +1,5 @@
 import React from "react";
- 
+ import bunnur from '../../assets/bunner.jpg'
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
         <div className="md:w-1/2">
           <img
             className="rounded-xl max-w-full mb-6"
-            src="public/images/bunner.jpg"
+            src={bunnur}
             alt="Banner"
           />
          
