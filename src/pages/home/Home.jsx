@@ -1,11 +1,12 @@
 import React from "react";
- import bunnur from '../../assets/bunner.jpg'
+import bunnur from "../../assets/bunner.jpg";
+import Categories from "./Categories";
 
 const Home = () => {
   return (
+    <>
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 bg-slate-100">
       <div className="py-24 flex flex-col md:flex-row-reverse justify-between items-center gap-8">
-  
         {/* Image */}
         <div className="md:w-1/2">
           <img
@@ -13,10 +14,9 @@ const Home = () => {
             src={bunnur}
             alt="Banner"
           />
-         
         </div>
-              {/* Text */}
-              <div className="md:w-1/2 space-y-7 px-4">
+        {/* Text */}
+        <div className="md:w-1/2 space-y-7 px-4">
           <h2 className="md:text-5xl text-4xl font-bold md:leading-snug leading-snug">
             Dive into Delight Of Delectable{" "}
             <span className="text-rose-700">Food!</span>
@@ -31,6 +31,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <Categories/>
+    </>
   );
 };
 
