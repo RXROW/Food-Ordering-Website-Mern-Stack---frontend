@@ -10,7 +10,7 @@ const Cards = ({ item }) => {
 
 
 return (
-<div className="card card-compact w-96 bg-base-100 shadow-xl">
+<div className="card card-compact w-96 bg-base-100 shadow-xl custmMedia">
   <div 
   className={`rating gap-1 absolute right-2 top-2 p-4 heartStar bg-rose-500 
   ${isHeartFilled ? "text-rose-700" : " text-white"}`} >
