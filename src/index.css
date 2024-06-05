@@ -5,6 +5,9 @@
 html{
   height: 3000px;
 }
+header{
+z-index: 10000 !important;
+}
 .sectionContainer{
   @apply max-w-screen-2xl container mx-auto xl:px-24 px-4;
  }
@@ -13,4 +16,7 @@ html{
  }
 .title{
   @apply text-4xl md:text-4xl text-gray-900 font-bold my-2 md:leading-snug leading-snug ;  
+}
+.heartStar{
+  border-radius: 0px 28px 0px 28px ;
 }
