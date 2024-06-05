@@ -21,7 +21,7 @@ return (
 {/* <Link to={`/menu/${item._id}`}> */}
   <figure>
     <img src={item.image} alt={item.name} 
-     className="p-0 hover:scale-105 transition-all duration-200 md:h-72"/>
+     className="p-0 hover:scale-105 transition-all duration-200  md:h-64"/>
     </figure>
     {/* </Link> */}
 
