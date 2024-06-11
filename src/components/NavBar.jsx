@@ -20,7 +20,7 @@ const NavBar = () => {
  },[])
 
   return (
-    <header className="max-w-screen-2xl  fixed top-0  left-0 right-0  transition-all duration-300 ease-out   ">
+    <header className="  fixed top-0  left-0 right-0  transition-all duration-300 ease-out   ">
      
       <div className={ `navbar xl:px-24  ${sticky ? "shadow-md bg-base-100  transition-all duration-300 ease-out " : ""}`}  >
         <div className="navbar-start">

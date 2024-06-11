@@ -2,6 +2,8 @@ import React from "react";
 import bunnur from "../../assets/bunner.jpg";
 import Categories from "./Categories";
 import SpacialDishes from "./SpacialDishes";
+import Testimonials from "./Testimonials";
+import OurServices from "./OurServices";
 
 const Home = () => {
   return (
@@ -34,6 +36,8 @@ const Home = () => {
     </div>
     <Categories/>
     <SpacialDishes/>
+    <Testimonials/>
+    <OurServices/>
   
     </>
   );
