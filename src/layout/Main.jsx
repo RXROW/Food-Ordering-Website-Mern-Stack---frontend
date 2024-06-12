@@ -11,7 +11,10 @@ const Main = () => {
   return (
     <div>
       <NavBar/>
+      <main>
       <Outlet/>
+      </main>
+    
       <Footer/>
    
  
