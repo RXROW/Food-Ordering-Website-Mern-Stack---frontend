@@ -84,7 +84,7 @@ const SpacialDishes = () => {
   };
 
   return (
-    <div className='sectionContainer my-30 relative'>
+    <div className='sectionContainer my-30 mt-32 relative'>
       <div className='text-left'>
         <p className='subTitle mt-2'>Special Dishes</p>
         <h2 className='title md:w-[520px]'>Standout Dishes From Our Menu </h2>

@@ -12,7 +12,7 @@ const categoryItems = [
 
 const Categories = () => {
   return (
-    <div className='sectionContainer'>
+    <div className='sectionContainer mt-12'>
       <div className='text-center'>
         <p className='subTitle mt-2'>Customer Favorites</p>
         <h2 className='title'>Popular Categories</h2>

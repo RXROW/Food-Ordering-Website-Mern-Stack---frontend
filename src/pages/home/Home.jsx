@@ -4,6 +4,7 @@ import Categories from "./Categories";
 import SpacialDishes from "./SpacialDishes";
 import Testimonials from "./Testimonials";
 import OurServices from "./OurServices";
+ 
 
 const Home = () => {
   return (
@@ -38,6 +39,7 @@ const Home = () => {
     <SpacialDishes/>
     <Testimonials/>
     <OurServices/>
+  
   
     </>
   );
