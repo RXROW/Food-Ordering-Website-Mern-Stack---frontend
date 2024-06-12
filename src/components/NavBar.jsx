@@ -49,7 +49,7 @@ const NavBar = () => {
                 <a href="/"> Home </a>
               </li>
               <li>
-                <a>Menue</a>
+                <a href="/menu">Menu</a>
                 <ul className="p-2">
                   <li>
                     <a>All </a>
@@ -94,7 +94,7 @@ const NavBar = () => {
             </li>
             <li>
               <details>
-                <summary> Menue </summary>
+                <summary>       <a href="/menu">Menu</a>   </summary>
                 <ul className="p-2">
                   <li>
                     <a>All</a>
